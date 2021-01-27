@@ -45,3 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mMultiSource: {fileID: 0}
   mDepthTexture: {fileID: 0}
+  mDepthSensitivity: 0.75
+  mWallDepth: 1
+  mTopCutOff: 0.68
+  mBottomCutOff: -0.74
+  mLeftCutOff: -0.71
+  mRightmCutOff: 0.76
