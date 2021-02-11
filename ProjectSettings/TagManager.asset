@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - interactiepunt
+  - VideoTrigger1
+  - VideoTrigger2
+  - VideoTrigger3
+  - static
+  - VideoStatic
   layers:
   - Default
   - TransparentFX

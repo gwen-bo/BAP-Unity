@@ -30,7 +30,7 @@ public class HandTrigger : MonoBehaviour
     GameObject video1;
     GameObject video2;
     GameObject video3;
-    GameObject staticVideo;
+  //  GameObject staticVideo;
 
     private VideoPlayer videoPlayer;
 
@@ -51,7 +51,7 @@ public class HandTrigger : MonoBehaviour
         video2 = GameObject.FindWithTag("VideoTrigger2");
         video3 = GameObject.FindWithTag("VideoTrigger3");
 
-        staticVideo = GameObject.FindWithTag("static");
+      //  staticVideo = GameObject.FindWithTag("static");
 
 
         if (gameObject.name == "HandTrigger1")
@@ -79,7 +79,7 @@ public class HandTrigger : MonoBehaviour
 
     private void handleTrigger()
     {
-        staticVideo.SetActive(false);
+      //  staticVideo.SetActive(false);
         audioSource.Play();
         videoPlayer.Play();
 
