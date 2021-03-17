@@ -24,8 +24,8 @@ public class MeasureDepth : MonoBehaviour
     public float mBottomCutOff = -1;
 
     [Header("Left and right")]
-    [Range(-1, 1f)]
-    public float mLeftCutOff = -1;
+    [Range(-2, 1f)]
+    public float mLeftCutOff = -2;
     [Range(-1, 1f)]
     public float mRightmCutOff = 1;
 
@@ -73,18 +73,18 @@ public class MeasureDepth : MonoBehaviour
         }
     }
 
-  //  private void OnGUI()
-  //  {
-  //      GUI.Box(mRect, "");
+ // private void OnGUI()
+ //  {
+ //  GUI.Box(mRect, "");
 
-  //      if (mTriggerPoints == null)
-   //         return;
-   //     foreach(Vector2 point in mTriggerPoints)
-    //    {
-  //          Rect rect = new Rect(point, new Vector2(10, 10));
-   //         GUI.Box(rect, "");
-   //     }
-  //  }
+ //   if (mTriggerPoints == null)
+  //   return;
+ //  foreach(Vector2 point in mTriggerPoints)
+ //  {
+ //  Rect rect = new Rect(point, new Vector2(10, 10));
+ //  GUI.Box(rect, "");
+  // }
+  // }
 
     private List<ValidPoint> DepthToColor()
     {
@@ -109,14 +109,14 @@ public class MeasureDepth : MonoBehaviour
                 sampleIndex *= 8; // zorgt ervoor dat we een aantal punten 'overslaan'
 
                 // Cutoff tests
-                if (mCameraSpacePoints[sampleIndex].X < mLeftCutOff)
-                    continue;
-                if (mCameraSpacePoints[sampleIndex].X > mRightmCutOff)
-                    continue;
-                if (mCameraSpacePoints[sampleIndex].Y > mTopCutOff)
-                    continue;
-                if (mCameraSpacePoints[sampleIndex].Y < mBottomCutOff)
-                    continue;
+               // if (mCameraSpacePoints[sampleIndex].X < mLeftCutOff)
+                //    continue;
+              //  if (mCameraSpacePoints[sampleIndex].X > mRightmCutOff)
+              //      continue;
+              //  if (mCameraSpacePoints[sampleIndex].Y > mTopCutOff)
+              //      continue;
+              //  if (mCameraSpacePoints[sampleIndex].Y < mBottomCutOff)
+               //     continue;
 
                 // create new point - nieuwe klasse gebruiken om een nieuw 'valid point' binnenin de play ruimte te creëren. 
                 // dit punt kennen we ook een Z-waarde (depthwaarde) toe. 

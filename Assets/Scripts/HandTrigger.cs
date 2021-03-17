@@ -10,7 +10,7 @@ using SimpleJSON;
 public class HandTrigger : MonoBehaviour
 {
     [Range(0, 10)]
-    public int mSensitivity = 5; // dit is het getal dat de drempel bepaalt van het triggerpoints die zich in het vlak moeten begeven alvorens te 'triggeren'
+    public int mSensitivity = 4; // dit is het getal dat de drempel bepaalt van het triggerpoints die zich in het vlak moeten begeven alvorens te 'triggeren'
 
     public bool mIsTriggered = false;
 
