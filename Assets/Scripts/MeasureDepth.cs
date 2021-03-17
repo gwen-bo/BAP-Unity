@@ -74,17 +74,17 @@ public class MeasureDepth : MonoBehaviour
     }
 
  // private void OnGUI()
- //  {
- //  GUI.Box(mRect, "");
+ //{
+ // GUI.Box(mRect, "");
 
- //   if (mTriggerPoints == null)
-  //   return;
- //  foreach(Vector2 point in mTriggerPoints)
- //  {
- //  Rect rect = new Rect(point, new Vector2(10, 10));
- //  GUI.Box(rect, "");
-  // }
-  // }
+ //  if (mTriggerPoints == null)
+  // return;
+ // foreach(Vector2 point in mTriggerPoints)
+ // {
+ // Rect rect = new Rect(point, new Vector2(10, 10));
+//  GUI.Box(rect, "");
+//   }
+// }
 
     private List<ValidPoint> DepthToColor()
     {
