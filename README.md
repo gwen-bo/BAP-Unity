@@ -1,4 +1,4 @@
-# Interactive installation for Memento Woordfestival
+# Geraakt: an interactive installation for Memento Woordfestival
 
 A festival where word art in all it forms is being celebrated. For this installation we started from the concept of 'word art touches/can touch'. 
 We invite people to interact with the authors and their words and to be touched/ touch. 
